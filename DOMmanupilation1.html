@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        This is a div element.
+    <div>
+    <!--replacing child getElementsByClassName-->
+    <script>
+        // selecting the <div> element
+        var elmt = document.querySelector('div'); 
+    
+        //creating new <p> element and adding content inside it. 
+        var newElmt = document.createElement('p');  
+        newElmt.innerHTML = '<b>The div element is replaced with p element</b>';
+    
+        //replacing the <div> element with the <p> element
+        elmt.parentNode.replaceChild(newElmt, elmt);
+    
+    </script>
+</body>
+</html>
